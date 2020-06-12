@@ -1,0 +1,280 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+    RESET END
+*/
+
+@font-face{
+    font-family: Akira;
+    src: url(../fonts/Akira/Akira\ Expanded\ Demo.otf);
+}
+
+@font-face{
+    font-family: Comforta-Bold;
+    src: url(../fonts/Comfortaa/Comfortaa-Bold.ttf)
+}
+
+@font-face{
+    font-family: Comforta-Light;
+    src: url(../fonts/Comfortaa/Comfortaa-Light.ttf)
+}
+
+@font-face{
+    font-family: Comforta-Regular;
+    src: url(../fonts/Comfortaa/Comfortaa-Regular.ttf)
+}
+
+
+#menu ul li {
+    background-color:#34495e;
+}
+
+#menu ul {
+    margin-right: 80px;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+#menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+#menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+#menu ul li:hover {
+    background:#27405a;
+}
+
+#menu ul ul {
+    z-index: 1;
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
+}
+
+#menu ul ul li {
+    float:none;
+    width:450px;
+    padding-bottom: 50px;
+}
+
+#menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+    font-size: 30px;
+}
+
+#menu ul li:hover > ul {
+    display:block;
+}
+
+
+#menu input[type="image"]{
+    padding:20px 0 20px 20px;
+}
+
+#menu li img{
+    padding:20px 20px 20px 277px;
+}
+
+
+.container{
+    height: 2000px;
+    width: 1000px;
+    background-color: #2c3e50;
+}
+
+#noticias{
+    color: white;
+    font-size: 53px;
+    font-family: Comforta-Bold;
+    font-weight: bold;
+    margin: 20px 0 30px 20px;
+}
+
+.slidershow{
+    margin: 510px 0 0 498px;
+    width: 980px;
+    height: 685px;
+    overflow: hidden;
+}
+.middle{
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{
+    background: #fff;
+}
+  
+input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+}
+  
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+  
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+.slide img{
+    border-radius: 50px;
+    width: 100%;
+    height: 85%;
+}
+  
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+  
+
+
+
+
+.box1{
+    padding: 920px 0 0 20px;
+    height: 400px;
+    width: 930px;
+    color: white;
+    font-size: 53px;
+    font-family: Comforta-Bold;
+    font-weight: bold;
+}
+
+.box2{
+    padding: 120px 0 0 20px;
+    height: 400px;
+    width: 930px;
+
+    color: white;
+    font-size: 53px;
+    font-family: Comforta-Bold;
+    font-weight: bold;
+}
+
+.items{
+    padding: 0px 0 0 20px;
+    display: flex;
+    overflow: auto;
+}
+
+.items::-webkit-scrollbar{
+    height: 12px;
+    margin-left: 20px;
+    background-color: rgba(202, 199, 199, 0.534);
+}
+
+.items::-webkit-scrollbar-thumb {
+    background: rgb(107, 105, 105); 
+}
+
+.items .item{
+    min-width: 220px;
+    height: 330px;
+    margin:30px;
+}
+
+.items img{
+    width: 100%;
+    height: 100%;
+}
+
+#im{
+    height: 290px;
+    width: 220px;
+}
+
+#text{
+    padding-top: 10px;
+    font-size: 23px;
+    font-family: Comforta-Light;
+}
